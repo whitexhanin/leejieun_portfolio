@@ -278,7 +278,7 @@ footer p{font-family:'JetBrains Mono',monospace;font-size:.62rem;color:rgba(255,
         <h3 class="pb-title">서울교통공사<br>Smart Station 8호선</h3>
         <div class="pb-meta">서울 8호선 역사 관제 시스템</div>
         <div class="pb-divider"></div>
-        <p class="pb-desc">서울 지하철 8호선의 역사 관제 시스템. 경보 발생 시 노선도에 실시간 SVG 경보 효과를 구현하고, em 단위 기반 반응형으로 PC와 태블릿을 모두 지원합니다.</p>
+        <p class="pb-desc">역사 경보 발생 시 노선도 위에 경보 효과를 시각적으로 표시해야 했으며, PC와 태블릿 양쪽에서 레이아웃이 안정적으로 유지되어야 하는 공공 시스템이었다. px 고정 방식은 태블릿 대응이 불가하고, vw/vh 단위는 노선도 비율 유지에 불리했다. em 단위는 부모 요소 기준으로 비율이 유지되어 노선도 레이아웃 구조와 궁합이 좋아 em 기반 반응형을 선택했다. 역사 경보 발생 시 노선도 경보 효과를 구현하고, em 단위 기반 반응형 레이아웃으로 PC·태블릿 대응을 완료했다. 그 결과, PC·태블릿 전 환경에서 레이아웃 안정성을 확보하고 공공기관 납품 검수를 통과했다.</p>
         <div class="pb-points">
           <div class="pb-point"><span class="pb-point-arrow">→</span>SVG 실시간 노선도 경보 효과 구현</div>
           <div class="pb-point"><span class="pb-point-arrow">→</span>역사 비상 상황 신속 대응 UI/UX 최적화</div>
@@ -304,7 +304,8 @@ footer p{font-family:'JetBrains Mono',monospace;font-size:.62rem;color:rgba(255,
         <h3 class="pb-title">Safety One<br>건설안전 ERP 시스템</h3>
         <div class="pb-meta">1920px · 2560px · PC ~ 태블릿 S7 반응형</div>
         <div class="pb-divider"></div>
-        <p class="pb-desc">건설 현장 안전 관리 ERP 시스템. 이중 해상도(1920×1080, 2560×1600)를 지원하며 PC부터 태블릿 S7까지 완전 반응형으로 구현했습니다.</p>
+        <p class="pb-desc">건설현장 안전 ERP는 현장 PC와 태블릿(S7)에서 동시 사용되는 B2B 솔루션으로, 디바이스별 해상도 차이(1920×1080 ~ 2560×1600)로 인해 레이아웃이 현장 장비에서 깨지는 문제가 발생해 데이터 입력 오류로 이어지고 있었다. 픽셀 고정 레이아웃은 구현이 빠르지만 해상도 대응이 불가했고, UI 라이브러리 도입은 사내 디자인 시스템과 충돌 우려가 있었다. 반면 SCSS 기반 커스텀 UI 직접 구현은 초기 비용이 높지만 모든 해상도·터치 이벤트를 완전히 제어할 수 있어, 공공 납품 품질 기준과 장기 유지보수를 고려해 커스텀 구현을 선택했다. TextArea 자동높이·AsideNav·TabEvent·checkboxAll·ListUpDown 등 6종 커스텀 UI 컴포넌트를 SCSS 변수 기반으로 직접 설계·구현해 해상도별 분기 처리를 적용했다. 그 결과, 태블릿 S7 포함 전 디바이스에서 UI 깨짐 0건, QA 재수정 요청 없이 일정 내 납품을 완료했다.
+</p>
         <div class="pb-points">
           <div class="pb-point"><span class="pb-point-arrow">→</span>건설안전 ERP 시스템 UI 전체 퍼블리싱</div>
           <div class="pb-point"><span class="pb-point-arrow">→</span>TextArea 자동 높이 조절 기능 구현</div>
@@ -335,7 +336,8 @@ footer p{font-family:'JetBrains Mono',monospace;font-size:.62rem;color:rgba(255,
         <h3 class="pb-title">Plug Golf<br>싱글매니저 고도화</h3>
         <div class="pb-meta">셀프 라운딩 골프 솔루션 · 모바일·태블릿 리뉴얼</div>
         <div class="pb-divider"></div>
-        <p class="pb-desc">골프 운영 서비스 플랫폼 모바일·태블릿 리뉴얼. iOS·Android 관제 어드민 개발 및 터치 기반 다양한 UI 인터랙션을 직접 구현했습니다.</p>
+        <p class="pb-desc">골프 스코어 관리 앱의 어드민 화면을 태블릿·모바일(iOS/Android)에서도 사용할 수 있도록 고도화하는 작업으로, 터치 기반 드래그앤드롭과 카드 애니메이션을 마우스 환경과 동일한 수준으로 구현하는 것이 과제였다. 네이티브 HTML5 드래그 API는 모바일 터치 이벤트를 지원하지 않고, 외부 라이브러리 도입은 기존 UI 구조와 충돌 가능성이 있었다. 따라서 touchstart·touchmove·touchend 이벤트를 직접 핸들링해 드래그앤드롭 로직을 순수 JS로 구현하는 방식을 선택했다. 태블릿용 터치 드래그앤드롭 순서 변경과 카드 게임·배토 애니메이션, 모바일용 좌우·상하 슬라이드, iOS/Android 관제 어드민 기능을 직접 구현했다. 그 결과, iOS·Android 전 단말기에서 터치 인터랙션 정상 동작을 확인하고 납품했다.
+</p>
         <div class="pb-points">
           <div class="pb-point"><span class="pb-point-arrow">→</span>터치 드래그 앤 드롭 순서 변경</div>
           <div class="pb-point"><span class="pb-point-arrow">→</span>카드 게임·배토 애니메이션 구현</div>
@@ -366,7 +368,8 @@ footer p{font-family:'JetBrains Mono',monospace;font-size:.62rem;color:rgba(255,
         <h3 class="pb-title">용산구 종합행정타운<br>길찾기 시스템</h3>
         <div class="pb-meta">키오스크 · 모바일 · 웹 접근성 준수</div>
         <div class="pb-divider"></div>
-        <p class="pb-desc">용산구 종합행정타운 웹 기반 길찾기 시스템. 웹 표준과 접근성(WCAG) 기준을 철저히 준수하며 wave·센스리더·키보드로 직접 테스트를 수행했습니다.</p>
+        <p class="pb-desc">공공기관 키오스크 및 모바일 화면으로 웹 접근성 법적 기준을 충족해야 했으며, 스크린리더 사용자와 키보드만으로 내비게이션하는 사용자까지 모두 대응해야 하는 과제였다. 접근성 라이브러리 사용보다 ARIA 속성과 시맨틱 HTML을 직접 작성하는 방식이 키오스크 환경의 커스텀 인터랙션(터치 핸들바·슬라이드)과 충돌 없이 적용 가능해 직접 구현을 선택하고, wave·센스리더·키보드 자가 테스트로 검증 프로세스를 수립했다. 모바일 터치 핸들바·슬라이드를 구현하고, 키보드 포커스 순서·스크린리더 대응·ARIA 레이블을 직접 작성해 웹 접근성 기준을 준수했다. 그 결과, wave 검사 오류 0건, 센스리더·키보드 테스트 기준 통과로 공공기관 납품 검수를 완료했다.
+</p>
         <div class="pb-points">
           <div class="pb-point"><span class="pb-point-arrow">→</span>모바일 터치 핸들바 구현</div>
           <div class="pb-point"><span class="pb-point-arrow">→</span>터치 슬라이드 기능 구현</div>
