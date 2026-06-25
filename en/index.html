@@ -20,6 +20,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;justify-content
 .nav-links a:hover{color:#7c6fff}
 .nav-btn{padding:.45rem 1.2rem;background:#7c6fff;color:#fff;text-decoration:none;font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;border-radius:4px;transition:background .2s;font-family:'JetBrains Mono',monospace}
 .nav-btn:hover{background:#6355e0}
+.lang-switch{display:flex;gap:.15rem;align-items:center}
+.lang-switch a{font-family:'JetBrains Mono',monospace;font-size:.7rem;color:rgba(255,255,255,.35);text-decoration:none;padding:.25rem .5rem;border-radius:4px;letter-spacing:.06em;transition:all .2s}
+.lang-switch a.active{color:#fff;background:rgba(124,111,255,.25)}
+.lang-switch a:hover{color:#7c6fff}
 
 /* HERO */
 #hero{min-height:100vh;display:flex;align-items:center;padding:7rem 2.5rem 4rem;position:relative;overflow:hidden;justify-content: center;}
@@ -182,7 +186,7 @@ footer p{font-family:'JetBrains Mono',monospace;font-size:.62rem;color:rgba(255,
     <li><a href="#gallery">Gallery</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a href="#contact" class="nav-btn">Contact</a>
+  <div style="display:flex;align-items:center;gap:.6rem"><div class="lang-switch"><a href="../">KO</a><a href="./" class="active">EN</a></div><a href="#contact" class="nav-btn">Contact</a></div>
 </nav>
 
 <!-- HERO -->
