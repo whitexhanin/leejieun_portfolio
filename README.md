@@ -1,4 +1,4 @@
-# 이지은 포트폴리오 — Frontend Developer
+# 이지은 포트폴리오 — UI Developer · Frontend
 
 인터랙션·반응형·웹 접근성 중심의 포트폴리오 사이트입니다. 빌드 도구 없이 HTML·CSS·Vanilla JS(ES Modules)로 만들었고 GitHub Pages에 그대로 배포됩니다.
 
