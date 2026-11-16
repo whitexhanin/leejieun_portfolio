@@ -233,12 +233,12 @@ const projects = {
 /* ---------- Everything else ---------- */
 export const content = {
   ko: {
-    meta: { title: '이지은 — Frontend Developer', lang: 'ko' },
+    meta: { title: '이지은 — UI Developer · Frontend', lang: 'ko' },
     nav: { work: '프로젝트', lab: '컴포넌트', about: '역량', experience: '경력', contact: '연락하기' },
     hero: {
-      eyebrow: 'Frontend Developer · 6+ years',
+      eyebrow: 'UI Developer · Frontend · 6+ years',
       lines: ['Interfaces', 'that *move*', 'with intent.'],
-      lead: '4K·키오스크부터 모바일까지, 정부(B2G)·B2B·커머스 화면의 인터랙션 로직을 직접 설계하고 구현해 온 6년차 프론트엔드 개발자 이지은입니다.',
+      lead: '4K·키오스크부터 모바일까지, 정부(B2G)·B2B·커머스 화면의 UI와 인터랙션을 직접 설계하고 구현해 온 6년차 UI 개발자 이지은입니다. 최근에는 AI를 활용해 React와 API 연동까지 프론트엔드 영역으로 범위를 넓히고 있습니다.',
       ctaPrimary: '프로젝트 보기',
       ctaSecondary: '컴포넌트 랩',
       stats: [
@@ -252,12 +252,12 @@ export const content = {
     about: {
       label: 'Capabilities',
       title: '화면이 어디에 있든,\n의도대로 움직이게.',
-      intro: '드래그앤드롭·SVG·타이밍 제어 같은 인터랙션을 라이브러리에 기대지 않고 직접 만들어 왔습니다. 최근에는 React 컴포넌트 설계와 REST API 연동으로 범위를 넓히고 있습니다.',
+      intro: '드래그앤드롭·SVG·타이밍 제어 같은 인터랙션을 라이브러리에 기대지 않고 직접 만들어 왔습니다. 퍼블리싱에서 출발해 지금은 AI를 활용한 React 개발과 API 연동까지 직접 진행합니다.',
       skills: [
         { title: '인터랙션 & 애니메이션', desc: '터치 드래그앤드롭, SVG 애니메이션, CSS 트랜지션, 패럴렉스를 직접 구현합니다.', tags: ['Drag & Drop', 'SVG', 'Touch Event', 'Parallax'] },
         { title: '반응형 & 해상도', desc: '모바일·태블릿·PC·4K·키오스크까지. 1vh·rem·em을 상황에 맞게 골라 씁니다.', tags: ['Mobile First', '4K', 'Kiosk', 'Tablet'] },
         { title: '웹 접근성', desc: 'WCAG 기준, wave·센스리더·키보드로 직접 검증하고 공공기관 검수를 통과했습니다.', tags: ['WCAG', 'ARIA', 'Screen Reader'] },
-        { title: 'JavaScript & React', desc: 'ES6+로 기능을 직접 만들고, React에서는 재사용 가능한 컴포넌트 설계에 집중합니다.', tags: ['React', 'ES6+', 'TypeScript', 'Next.js'] },
+        { title: 'React & AI 활용 개발', desc: 'React 교육을 이수했고, 프리랜서 프로젝트에서 AI를 활용해 React 퍼블리싱부터 API 연동까지 납품했습니다.', tags: ['React', 'ES6+', 'AI-assisted', 'TypeScript'] },
         { title: 'API 연동', desc: 'POSTMAN으로 명세를 분석하고 REST API를 직접 연동해 실동작 화면으로 납품합니다.', tags: ['REST API', 'fetch', 'JWT', 'POSTMAN'] },
         { title: '마크업 & 협업', desc: '시맨틱 마크업, 크로스브라우징, Grid/Flexbox. Figma 기반으로 디자이너와 협업합니다.', tags: ['HTML5', 'SCSS', 'Figma', 'Git'] },
       ],
@@ -308,12 +308,12 @@ export const content = {
   },
 
   en: {
-    meta: { title: 'Jieun Lee — Frontend Developer', lang: 'en' },
+    meta: { title: 'Jieun Lee — UI Developer · Frontend', lang: 'en' },
     nav: { work: 'Work', lab: 'Lab', about: 'About', experience: 'Experience', contact: 'Contact' },
     hero: {
-      eyebrow: 'Frontend Developer · 6+ years',
+      eyebrow: 'UI Developer · Frontend · 6+ years',
       lines: ['Interfaces', 'that *move*', 'with intent.'],
-      lead: 'I’m Jieun Lee, a frontend developer who has spent 6+ years designing and building interaction logic for government, B2B and commerce products — on everything from 4K kiosks to phones.',
+      lead: 'I’m Jieun Lee, a UI developer who has spent 6+ years designing and building interfaces and interactions for government, B2B and commerce products — on everything from 4K kiosks to phones. Lately I’ve been extending into frontend work, using AI to ship React apps with live API integration.',
       ctaPrimary: 'View work',
       ctaSecondary: 'Component lab',
       stats: [
@@ -327,12 +327,12 @@ export const content = {
     about: {
       label: 'Capabilities',
       title: 'Wherever the screen is,\nit moves as intended.',
-      intro: 'I build interactions like drag & drop, SVG and timing control by hand rather than leaning on libraries — and I’m expanding into React component design and REST API integration.',
+      intro: 'I build interactions like drag & drop, SVG and timing control by hand rather than leaning on libraries. Starting from web publishing, I now also build React apps and wire up APIs with AI-assisted development.',
       skills: [
         { title: 'Interaction & Motion', desc: 'Touch drag & drop, SVG animation, CSS transitions and parallax, built by hand.', tags: ['Drag & Drop', 'SVG', 'Touch Event', 'Parallax'] },
         { title: 'Responsive & Resolution', desc: 'Mobile, tablet, desktop, 4K and kiosk — choosing vh, rem or em for each case.', tags: ['Mobile First', '4K', 'Kiosk', 'Tablet'] },
         { title: 'Accessibility', desc: 'WCAG, verified hands-on with WAVE, screen readers and keyboard; passed public inspections.', tags: ['WCAG', 'ARIA', 'Screen Reader'] },
-        { title: 'JavaScript & React', desc: 'Features in ES6+, and reusable component design in React.', tags: ['React', 'ES6+', 'TypeScript', 'Next.js'] },
+        { title: 'React & AI-assisted Dev', desc: 'Trained in React, and shipped freelance React work — from publishing to API integration — using AI-assisted development.', tags: ['React', 'ES6+', 'AI-assisted', 'TypeScript'] },
         { title: 'API Integration', desc: 'Analysing specs in POSTMAN and wiring REST APIs straight into working screens.', tags: ['REST API', 'fetch', 'JWT', 'POSTMAN'] },
         { title: 'Markup & Collaboration', desc: 'Semantic markup, cross-browser, Grid / Flexbox, and Figma-based work with designers.', tags: ['HTML5', 'SCSS', 'Figma', 'Git'] },
       ],
